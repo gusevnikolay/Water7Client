@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAVIOT", "WAVIOT.Water7Client\WAVIOT.csproj", "{B9B41D1F-BECE-45C8-819C-2D7C1944C56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaviotAPI.Lib", "Water7.Lib\WaviotAPI.Lib.csproj", "{8C2CD825-C292-44B9-9C05-316324BAF6DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigTiffany210", "BigTiffany210\BigTiffany210.csproj", "{4B82A1D2-2B0D-4204-9073-09487B396E80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9B41D1F-BECE-45C8-819C-2D7C1944C56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B41D1F-BECE-45C8-819C-2D7C1944C56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B41D1F-BECE-45C8-819C-2D7C1944C56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B41D1F-BECE-45C8-819C-2D7C1944C56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2CD825-C292-44B9-9C05-316324BAF6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2CD825-C292-44B9-9C05-316324BAF6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2CD825-C292-44B9-9C05-316324BAF6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2CD825-C292-44B9-9C05-316324BAF6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B82A1D2-2B0D-4204-9073-09487B396E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B82A1D2-2B0D-4204-9073-09487B396E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B82A1D2-2B0D-4204-9073-09487B396E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B82A1D2-2B0D-4204-9073-09487B396E80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7BC68A6-7D76-4696-8501-274A0D6C789F}
+	EndGlobalSection
+EndGlobal
