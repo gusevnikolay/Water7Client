@@ -33,7 +33,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Output\Debug\</OutputPath>
+    <OutputPath>..\Output\Water7Client\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,7 +42,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Output\app\</OutputPath>
+    <OutputPath>..\Output\Water7Client\app\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -114,6 +114,7 @@
     </Compile>
     <EmbeddedResource Include="devices\Aqua.resx">
       <DependentUpon>Aqua.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="devices\BigTiffanyCurrentLoop.resx">
       <DependentUpon>BigTiffanyCurrentLoop.cs</DependentUpon>

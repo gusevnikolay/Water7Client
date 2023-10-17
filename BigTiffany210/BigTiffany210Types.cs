@@ -8,7 +8,7 @@ namespace BigTiffany210
 {
     public class ModemState
     {
-        public String ICCID = "0000000000000000";
+        public String ICCID = "0000";
         public String IP = "10.10.10.10";
     }
     public struct MemeoryInformation
@@ -23,6 +23,18 @@ namespace BigTiffany210
     {
         public string ICCID1;
         public string ICCID2;
+    }
+
+    public struct AuthInformation
+    {
+        public string Login;
+        public string Password;
+    }
+
+    public struct NbfiServerInformation
+    {
+        public string Server;
+        public UInt16 Port;
     }
 
     public class LteConfig
@@ -42,6 +54,12 @@ namespace BigTiffany210
         {
             SIM1 = 0,
             SIM2 = 1
+        }
+
+        public enum NbfiInterface
+        {
+            WA1470 = 0,
+            LTE = 1
         }
 
         SimCard Sim;
