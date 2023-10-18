@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bSelftest = new System.Windows.Forms.Button();
             this.textWaviotPassword = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.textWaviotLogin = new System.Windows.Forms.TextBox();
@@ -102,10 +103,9 @@
             this.PA = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Fd = new System.Windows.Forms.GroupBox();
-            this.selfTestProgress = new System.Windows.Forms.ProgressBar();
-            this.lSelftestProgress = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.bSelftest = new System.Windows.Forms.Button();
+            this.lSelftestProgress = new System.Windows.Forms.Label();
+            this.selfTestProgress = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -139,6 +139,18 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "USB Connection";
+            // 
+            // bSelftest
+            // 
+            this.bSelftest.Enabled = false;
+            this.bSelftest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bSelftest.Location = new System.Drawing.Point(289, 110);
+            this.bSelftest.Name = "bSelftest";
+            this.bSelftest.Size = new System.Drawing.Size(73, 30);
+            this.bSelftest.TabIndex = 42;
+            this.bSelftest.Text = "Автотест";
+            this.bSelftest.UseVisualStyleBackColor = true;
+            this.bSelftest.Click += new System.EventHandler(this.bSelftest_Click);
             // 
             // textWaviotPassword
             // 
@@ -933,23 +945,6 @@
             this.Fd.TabStop = false;
             this.Fd.Text = "Автотест";
             // 
-            // selfTestProgress
-            // 
-            this.selfTestProgress.Location = new System.Drawing.Point(9, 44);
-            this.selfTestProgress.Name = "selfTestProgress";
-            this.selfTestProgress.Size = new System.Drawing.Size(369, 23);
-            this.selfTestProgress.Step = 1;
-            this.selfTestProgress.TabIndex = 39;
-            // 
-            // lSelftestProgress
-            // 
-            this.lSelftestProgress.AutoSize = true;
-            this.lSelftestProgress.Location = new System.Drawing.Point(6, 70);
-            this.lSelftestProgress.Name = "lSelftestProgress";
-            this.lSelftestProgress.Size = new System.Drawing.Size(42, 13);
-            this.lSelftestProgress.TabIndex = 40;
-            this.lSelftestProgress.Text = "Готово";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -960,17 +955,22 @@
             this.label21.TabIndex = 41;
             this.label21.Text = "Проверка устройства";
             // 
-            // bSelftest
+            // lSelftestProgress
             // 
-            this.bSelftest.Enabled = false;
-            this.bSelftest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bSelftest.Location = new System.Drawing.Point(289, 110);
-            this.bSelftest.Name = "bSelftest";
-            this.bSelftest.Size = new System.Drawing.Size(73, 30);
-            this.bSelftest.TabIndex = 42;
-            this.bSelftest.Text = "Автотест";
-            this.bSelftest.UseVisualStyleBackColor = true;
-            this.bSelftest.Click += new System.EventHandler(this.bSelftest_Click);
+            this.lSelftestProgress.AutoSize = true;
+            this.lSelftestProgress.Location = new System.Drawing.Point(6, 70);
+            this.lSelftestProgress.Name = "lSelftestProgress";
+            this.lSelftestProgress.Size = new System.Drawing.Size(42, 13);
+            this.lSelftestProgress.TabIndex = 40;
+            this.lSelftestProgress.Text = "Готово";
+            // 
+            // selfTestProgress
+            // 
+            this.selfTestProgress.Location = new System.Drawing.Point(9, 44);
+            this.selfTestProgress.Name = "selfTestProgress";
+            this.selfTestProgress.Size = new System.Drawing.Size(369, 23);
+            this.selfTestProgress.Step = 1;
+            this.selfTestProgress.TabIndex = 39;
             // 
             // MainApp
             // 
@@ -984,6 +984,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainApp";
             this.Text = "BT210 Tool";
             this.Load += new System.EventHandler(this.Form1_Load);

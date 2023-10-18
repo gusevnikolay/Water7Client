@@ -294,6 +294,7 @@ namespace BigTiffany210
             }));
             var time = BigTiffany.GetCurrentUnixTimestampMillis();
             _device.SetNbfiInterface(NbfiInterface.WA1470);
+            System.Threading.Thread.Sleep(2000);
             _device.NbfiSend(payload);
             UpdateSelftestProgress("Ожидаем данные на сервере", 35);
             var id = _device.GetNbfiId();
@@ -324,7 +325,10 @@ namespace BigTiffany210
                 Fd.Enabled = false;
             }));
             UpdateSelftestProgress("Проверка завершена", 100);
-            
+            this.BeginInvoke(new Action(() =>
+            {
+                bRefresh_Click(new object(), new EventArgs());
+            }));
         }
 
         private void bRefresh_Click(object sender, EventArgs e)

@@ -58,8 +58,8 @@ namespace BigTiffany210
 
         public enum NbfiInterface
         {
-            WA1470 = 0,
-            LTE = 1
+            LTE = 0,
+            WA1470 = 1
         }
 
         SimCard Sim;
