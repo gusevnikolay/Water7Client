@@ -81,11 +81,6 @@ namespace BigTiffany210
         {
             try
             {
-                var fw = new Firmware(textHexPath.Text);
-                fw.Load();
-                var memory = _device.GetMemoryInformation();
-                var data = fw.GetFirmwareData(memory.MainAppStartAddress, memory.MainAppEndAddress);
-                var cmds = FirmwareUpdateCmdSequence.Create(data, memory.MainAppStartAddress, memory.UpdateStorageStartAddress);
                 var th = new System.Threading.Thread(UploadFirmwareProcess);
                 th.IsBackground = true;
                 th.Start();
